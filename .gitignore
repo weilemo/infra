@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+
+# Experiment data and generated evidence
+artifacts/
+data/
+datasets/
+logs/
+outputs/
+runs/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.trace.json
+
+# Local machine configuration and secrets
+.env
+.env.*
+!.env.example
+local/

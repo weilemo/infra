@@ -1,0 +1,30 @@
+{
+  "workload": "tiny-decoder-fixed-v1",
+  "model": {
+    "architecture": "decoder-only Transformer",
+    "layers": 4,
+    "hidden_size": 512,
+    "attention_heads": 8,
+    "ffn_hidden_size": 2048,
+    "vocab_size": 32768,
+    "dropout": 0.0,
+    "tied_input_output_embeddings": true
+  },
+  "workload_config": {
+    "task": "next-token prediction",
+    "data": "fixed synthetic token IDs",
+    "batch_size": 2,
+    "sequence_length": 256,
+    "dtype": "float32",
+    "seed": 0
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.001
+  },
+  "measurement": {
+    "warmup_steps": 2,
+    "measured_steps": 8
+  }
+}
+
