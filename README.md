@@ -24,6 +24,8 @@ corresponding Obsidian experiment note.
 
 ## Local setup
 
+完整的 Conda 环境职责、安装、验证、升级和故障排查见 [环境与依赖维护](docs/环境与依赖维护.md)。
+
 Use Python 3.10 or newer. PyTorch is intentionally not pinned in this repository because the
 correct build depends on the local or server CUDA runtime.
 
@@ -88,4 +90,3 @@ scripts/                  launch and environment-capture helpers
 tests/                    low-cost validation
 artifacts/                generated local evidence, ignored by Git
 ```
-
