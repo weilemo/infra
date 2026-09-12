@@ -42,6 +42,8 @@ def main() -> None:
         "git_branch": command_output(["git", "branch", "--show-current"]),
         "git_status": command_output(["git", "status", "--short", "--branch"]),
         "cuda_visible_devices": os.environ.get("CUDA_VISIBLE_DEVICES"),
+        "epic_gpu_uuids": os.environ.get("EPIC_GPU_UUIDS"),
+        "epic_gpu_lease_expires_at": os.environ.get("EPIC_GPU_LEASE_EXPIRES_AT"),
     }
 
     try:
